@@ -114,19 +114,56 @@
                                     <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input class="form-control out" id="jko2" type="text" name="name" placeholder=""> 
+                                            <input class="form-control out" id="jko2" type="text" name="name" placeholder="">
                                         </div>
                                     </div>
                                     <hr>
                                     <div class="col-md-12">
                                         <div class="row mb-4">
                                             <div class="col-md-4"><p class="text-left mt-3">Item</p></div>
-                                            <div class="col-md-6 ml-auto d-flex justify-content-end"><button type="button" class="default-btn tambah">+ Tambah</button></div>
+                                            <div class="col-md-6 ml-auto d-flex justify-content-end">
+                                                <a href="#listone" data-toggle="collapse" aria-expanded="false" aria-controls="listone">
+                                                    <button type="button" class="default-btn tambah" data-text-swap="Tambah" data-text-original="Tutup">Tambah</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="collapse" id="listone">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Nama Barang</label> 
+                                                        <input class="form-control" id="nb" type="text" name="name" placeholder=""> 
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Kuantitas</label>
+                                                        <input class="form-control" id="kt" type="text" name="name" placeholder=""> 
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Harga Barang</label> 
+                                                        <input class="form-control" id="hb" type="text" name="name" placeholder=""> 
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Catatan</label> 
+                                                        <textarea class="form-control" id="ctt" name="name" rows="4" cols="50"></textarea>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                            <ul class="list-inline pull-right">
+                                                <li><button type="button" class="default-btn tambah2">+ Tambah</button></li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <textarea class="form-control" id="list" name="name" rows="4" cols="50"></textarea>
+                                            <div class="box-control" id="list"> 
+
+                                            </div>
                                         </div>
                                     </div>
                                     </div>
