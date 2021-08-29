@@ -55,7 +55,7 @@ button:focus,
     border: none;
     background-color: #f4f4f4;
     padding: 15px 15px 15px 15px;
-    height: 10rem;
+    height:auto;
     border-radius: 8px;
 }
 .out{
@@ -247,6 +247,21 @@ span.round-tab i{
     background-color: #5C62EC;
 }
 .next-step:active{
+	outline: none;
+	box-shadow: none;
+    background-color: #5C62EC;
+}
+.simpan{
+    color: #fff;
+    font-size: 16px;
+    font-family:'Poppins';
+    padding: 15px 24px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 30px;
+    background-color: #5C62EC;
+}
+.simpan:active{
 	outline: none;
 	box-shadow: none;
     background-color: #5C62EC;
