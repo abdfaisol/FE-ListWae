@@ -1,0 +1,57 @@
+.bg-warna{
+    background-color:#F4F4F4;
+    background-image:linear-gradient(180deg,#F4F4F4 10%,#E3DDDD 100%);
+    ;background-size:cover;
+}
+.card{
+    border-radius: 8px;
+}
+.form-log{
+    font-family:'Poppins';
+    padding: 6rem 6rem 6rem 6rem;
+    margin-top: 30px;
+}
+.judul{
+    color: #5B5959;
+    font-size: 24px;
+}
+.sub{
+    color: #736D6D;
+    font-size: 18px;
+}
+.form-group{
+    color: #5B5959;
+    font-size: 18px;
+}
+.form-control{
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    border: none;
+}
+.log{
+    margin-top: 2rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.bg-log-i{
+    background:url(https://i.ibb.co/LxqkYLT/masukb.png);
+    background-position:center;
+    background-size:cover;
+}
+.lupa{
+    color: #5C62EC;
+    font-size: 18px;
+}
+.daftar{
+    color: #5B5959;
+    font-size: 18px;
+}
+.daftar-l{
+    color: #5C62EC;
+    font-size: 18px;
+}
+.btn-primary{
+    background-color:#5C62EC;
+}
