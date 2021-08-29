@@ -237,6 +237,10 @@ body{
   font-size: 12px;
 
 }
+.sidebar-brand-icon  img{
+  width: 50%;
+  height: auto;
+}
 .progress-list p{
   margin-bottom: 0;
   margin-left: 10px;
