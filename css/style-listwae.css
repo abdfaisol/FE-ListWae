@@ -1,0 +1,250 @@
+body{
+  font-family: 'Poppins';
+}
+.fa-circle {
+  font-size: 7px;
+  margin: 0 5px;
+  color: #C4C4C4;
+}
+.m-bottom-small{
+  margin-bottom: 0.5rem;
+}
+#task-done h1, #h1-7rem{
+  font-size: 1.4rem
+}
+#list-wae-container{
+  font-size: 12px;
+  color: #736D6D;
+}
+#list-wae-container .card{
+  padding: 15px 15px;
+  padding-bottom: 0;
+}
+#list-wae-container .card-body{
+  padding-top: 0.5rem !important;
+}
+#list-wae-container .amount{
+  font-weight: bold;
+}
+.btn{
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 12px;
+}
+.menu-nav a, .menu-nav .nav-item{
+  color : #616467
+}
+.menu-nav .active{
+  background-color: #5C62EC !important;
+}
+.menu-nav .active a{
+  color: white !important
+}
+.menu-nav .nav-item{
+  background: #F8F8F8;
+  /* margin: 14px 24px; */
+  margin: 15px 15px;
+  border-radius: 8px;
+}
+.menu-nav .nav-item .nav-link{
+  width: 12.5rem;
+}
+
+#task-done .card-body{
+  padding-top: 1.25rem !important;
+}
+@media (max-width: 720px){
+  .sm-icon {
+    padding: 0.25rem 0.35rem !important;
+    padding-left: 0.45rem !important;
+    margin-right: 0.5rem;
+  }
+}
+@media (max-width: 720px){
+  .wallet {
+    display: none !important;
+  }
+}
+@media (min-width: 768px){
+  .menu-nav.toggled .nav-item .nav-link {
+    padding: 0.75rem 0.5rem !important;
+    width: 4.5rem !important;
+  }
+}
+@media (max-width: 768px){
+  .menu-nav .nav-item .nav-link{
+    width: 4.5rem;
+    padding: 0.75rem 0.5rem !important;
+  }
+}
+.bluesky{
+  background-color: #5C62EC !important;
+}
+.bluesky .collapse-header{
+  color: white !important
+}
+.bluesky .collapse-item{
+  color: white !important
+}
+.bluesky .collapse-item:hover{
+  background: white !important;
+  color: #5C62EC !important;
+}
+.wallet .wallet-form{
+  display: flex !important;
+  height: 4.375rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+.wallet .wallet-form{
+  width: auto !important;
+}
+.icon-gray{
+  color: #616467;
+}
+.bg-unggu{
+  background-color: #5C62EC;
+  color: white;
+}
+.wallet-form .input-group{
+  position: relative;
+  border-radius: 50vw;
+  border: 1px solid #CAC0C0;
+  overflow: hidden;
+}
+.wallet-form input{
+  padding-left: 50px;
+  background-color: transparent !important;
+}
+.curency-money-add{
+  background: transparent !important;
+}
+.curency-money-add i{
+  background: #5C62EC;
+  border-radius: 10vw;
+  padding: 0.35rem .35em;
+  padding-right: .3rem;
+  color: white;
+  width: 22px;
+  height: 22px;
+
+}
+.circle-ctn{
+  color: white;
+  background: #616467;
+  padding: 0.35rem .35em;
+  padding-right: .3rem;
+  border-radius: 10vw;
+  width: 22px;
+  height: 22px;
+}
+.abs-center{
+  top: 50% !important;
+  transform: translate(-50%, -50%);
+}
+.dollar{
+  left: 25px !important;
+}
+.curency-money{
+  color: black;
+  background: transparent !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1
+}
+.done{
+  color: #5C62EC
+}
+.not-done{
+  color: #E3DDDD
+}
+#padding-left-right-none{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+#task-done .row{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-left: 0;
+  margin-right: 0;
+}
+#height-auto{
+  height: auto !important;
+}
+.progress-bar{
+  border-radius: 100vw;
+}
+#list-wae-card-header{
+  background-color: white;
+  color: black;
+  border-bottom: none;
+  padding-bottom: 0 !important;
+}
+.amount{
+  float: right;
+  font-weight: bold;
+  color: black;
+  font-size: 0.9rem;
+}
+#list-wae-chekbox{
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+#list-wae-chekbox ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 15px;
+}
+#list-wae-chekbox ul li{
+  list-style: none;
+}
+#list-wae-chekbox ul li{
+  list-style: none;
+  margin-bottom: .25rem;
+}
+#list-wae-chekbox ul .title-subtask{
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: .35rem;
+}
+.checkbox-round {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #5C62EC;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox-round:checked {
+  background: #5C62EC;
+}
+.checkbox-round:checked::after {
+  font-family: "FontAwesome";
+  content: "\f00c";
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 12px;
+
+}
+.progress-list p{
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+.details .btn:focus{
+  box-shadow: none;
+}
+.short-detail{
+  display: none;
+  margin-bottom: 1rem;
+}
