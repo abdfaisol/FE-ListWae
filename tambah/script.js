@@ -50,14 +50,41 @@ $(".tambah").on("click", function() {
 $(".next-step").click(function () {
     var value0 = $("#jki").val();
     $('#jko').val(value0);
-    
+
     var value1 = $("#jko").val();
     var value2 = $("#ep").val();
     var value3 = $("#nb").val();
     var value4 = $("#kt").val();
+    var value4x = value4.fontsize(2);
     var value5 = $("#hb").val();
+    var value5x = value5.fontsize(2);
     var value6 = $("#ctt").val();
+    var value6x = value6.fontsize(1);
+    var g = " - ";
+    var gx = g.fontsize(2);
+    var rpp = "Rp";
+    var rppx = rpp.fontsize(2);
     $('#jko2').val(value1);
     var rp = "Rp" + value2;
     $('#rp').html(rp);
+    var list = "# " + value3 + "<br>" + "&emsp;&ensp;" + value4x + 
+    gx + rppx + value5x + "<br>" + "&emsp;&ensp;&nbsp;" + value6x + "<br>";
+    $('#list').html(list);
+});
+
+$(".tambah2").click(function () {
+    var value3 = $("#nb2").val();
+    var value4 = $("#kt2").val();
+    var value4x = value4.fontsize(2);
+    var value5 = $("#hb2").val();
+    var value5x = value5.fontsize(2);
+    var value6 = $("#ctt2").val();
+    var value6x = value6.fontsize(1);
+    var g = " - ";
+    var gx = g.fontsize(2);
+    var rpp = "Rp";
+    var rppx = rpp.fontsize(2);
+    var list = "# " + value3 + "<br>" + "&emsp;&ensp;" + value4x + 
+    gx + rppx + value5x + "<br>" + "&emsp;&ensp;&nbsp;" + value6x + "<br>";   
+    $("#list").append(list);
 });
