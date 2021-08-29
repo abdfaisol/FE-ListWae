@@ -51,13 +51,20 @@ button:focus,
 .form-control:disabled, .form-control[readonly]{
 	background-color: #fff;
 }
+.box-control{
+    border: none;
+    background-color: #f4f4f4;
+    padding: 15px 15px 15px 15px;
+    height: 10rem;
+    border-radius: 8px;
+}
 .out{
     padding-top: 2rem;
     padding-bottom: 2rem;
     border-radius: 8px;
     background-color: #E3DDDD;
 }
-/*----------------------------------*/
+/*----------step-wizard------------*/
 .d-flex{
 	display: flex;
 }
@@ -69,7 +76,7 @@ button:focus,
 	align-items: center;
 }
 
-/*-----------------------------------*/
+/*---------signup-step-------------*/
 .bg-color{
 	background-color: #333;
 }
@@ -240,6 +247,22 @@ span.round-tab i{
     background-color: #5C62EC;
 }
 .next-step:active{
+	outline: none;
+	box-shadow: none;
+    background-color: #5C62EC;
+}
+.tambah2{
+    color: #fff;
+    font-size: 16px;
+    font-family:'Poppins';
+    padding: 15px 24px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: #5C62EC;
+}
+.tambah2:active{
 	outline: none;
 	box-shadow: none;
     background-color: #5C62EC;
