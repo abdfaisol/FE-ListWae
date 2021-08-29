@@ -237,6 +237,12 @@ body{
   font-size: 12px;
 
 }
+.box-shadow-none:focus{
+  box-shadow: none !important;
+}
+.box-shadow-none:hover{
+  background: transparent !important
+}
 .sidebar-brand-icon  img{
   width: 50%;
   height: auto;
