@@ -64,6 +64,14 @@ button:focus,
     border-radius: 8px;
     background-color: #E3DDDD;
 }
+.drop-d{
+    border-radius: 8px;
+    bottom: -8px;
+    float: right;
+    margin-right: 15px;
+    background-color: #f4f4f4;
+    z-index: 2;
+}
 /*----------step-wizard------------*/
 .d-flex{
 	display: flex;
