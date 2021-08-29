@@ -40,6 +40,13 @@ $('.nav-tabs').on('click', 'li', function() {
     $(this).addClass('active');
 });
 
+$(".tambah").on("click", function() {
+    var el = $(this);
+    el.text() == el.data("text-swap") 
+      ? el.text(el.data("text-original")) 
+      : el.text(el.data("text-swap"));
+});
+
 $(".next-step").click(function () {
     var value = $("#jki").val();
     $('#jko').val(value);
@@ -55,8 +62,5 @@ $(".next-step").click(function () {
     $('#jko2').val(value);
     var rp = "Rp" + value2;
     $('#rp').html(rp);
-    var list = "# " + value3 + "\n" + "    " + value4 + 
-    " - " + "Rp" + value5 + "\n" + "    " + value6;
-    $('#list').val(list);
 
 });
