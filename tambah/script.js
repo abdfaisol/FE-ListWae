@@ -67,8 +67,9 @@ $(".next-step").click(function () {
     $('#jko2').val(value1);
     var rp = "Rp" + value2;
     $('#rp').html(rp);
-    var list = "# " + value3 + "<br>" + "&emsp;&ensp;" + value4x + 
-    gx + rppx + value5x + "<br>" + "&emsp;&ensp;&nbsp;" + value6x + "<br>";
+    var list = '<div class="col-md-12">' + '<input class="form-check-input me-1" type="checkbox">' 
+    + value3 + "<br>" + "&nbsp;" + value4x + 
+    gx + rppx + value5x + "<br>" + "&ensp;" + value6x + "</div>";
     $('#list').html(list);
 });
 
@@ -84,7 +85,8 @@ $(".tambah2").click(function () {
     var gx = g.fontsize(2);
     var rpp = "Rp";
     var rppx = rpp.fontsize(2);
-    var list = "# " + value3 + "<br>" + "&emsp;&ensp;" + value4x + 
-    gx + rppx + value5x + "<br>" + "&emsp;&ensp;&nbsp;" + value6x + "<br>";   
-    $("#list").append(list);
+    var list = '<div class="col-md-12">' + '<input class="form-check-input me-1" type="checkbox">' 
+    + value3 + "<br>" + "&nbsp;" + value4x + 
+    gx + rppx + value5x + "<br>" + "&ensp;" + value6x + "</div>";
+    $('#list').append(list);
 });
