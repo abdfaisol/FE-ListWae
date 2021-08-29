@@ -47,13 +47,13 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Judul Kebutuhan</label> 
-                                                <input class="form-control" type="text" name="name" placeholder=""> 
+                                                <input class="form-control" id="jki" type="text" name="name" placeholder=""> 
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Tanggal</label> 
-                                                <input class="form-control" type="date" name="name" placeholder=""> 
+                                                <input class="form-control" type="date" name="name" placeholder="">
                                             </div>
                                         </div>                          
                                         
@@ -67,7 +67,7 @@
                                     <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input class="form-control out" type="text" name="name" placeholder=""> 
+                                            <input class="form-control out" id="jko" type="text" name="name" placeholder=""> 
                                         </div>
                                     </div>
                                     <hr>
@@ -75,38 +75,38 @@
                                         <p class="text-left mt-2">Detail Item</p>
                                         <div class="form-group">
                                             <label>Estimasi Pengeluaran</label> 
-                                            <input class="form-control" type="text" name="name" placeholder=""> 
+                                            <input class="form-control" id="ep" type="text" name="name" placeholder=""> 
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label>Nama Barang</label> 
-                                            <input class="form-control" type="text" name="name" placeholder=""> 
+                                            <input class="form-control" id="nb" type="text" name="name" placeholder=""> 
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label>Kuantitas</label>
-                                            <input class="form-control" type="text" name="name" placeholder=""> 
+                                            <input class="form-control" id="kt" type="text" name="name" placeholder=""> 
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label>Harga Barang</label> 
-                                            <input class="form-control" type="text" name="name" placeholder=""> 
+                                            <input class="form-control" id="hb" type="text" name="name" placeholder=""> 
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label>Catatan</label> 
-                                            <textarea class="form-control" name="name" rows="4" cols="50"></textarea>
+                                            <textarea class="form-control" id="ctt" name="name" rows="4" cols="50"></textarea>
                                         </div>
                                     </div>
                                     </div>
                                     
                                     <div class="row">
                                         <div class="col-md-4"><button type="button" class="default-btn prev-step">Kembali</button></div>
-                                        <div class="col-md-4 ml-auto"><button type="button" class="default-btn next-step">Lanjutkan</button></div>
+                                        <div class="col-md-4 ml-auto d-flex justify-content-end"><button type="button" class="default-btn next-step">Lanjutkan</button></div>
                                     </div>
                                 </div>
                                 <div class="tab-pane" role="tabpanel" id="step3">
@@ -114,7 +114,7 @@
                                     <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input class="form-control out" type="text" name="name" placeholder=""> 
+                                            <input class="form-control out" id="jko2" type="text" name="name" placeholder=""> 
                                         </div>
                                     </div>
                                     <hr>
@@ -126,13 +126,13 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <textarea class="form-control" name="name" rows="4" cols="50"></textarea>
+                                            <textarea class="form-control" id="list" name="name" rows="4" cols="50"></textarea>
                                         </div>
                                     </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-8"><label class="text-left">Total Estimasi Pengeluaran</label></div>
-                                        <div class="col-md-4 ml-auto d-flex justify-content-end">RpXX.XXX</div>
+                                        <div class="col-md-4 ml-auto d-flex justify-content-end" id="rp"></div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-4"><button type="button" class="default-btn prev-step">Kembali</button></div>
@@ -154,7 +154,8 @@
 </div>
 <!-- partial -->
 <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
-<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<script  src="./script.js"></script>
 
 </body>
 </html>
