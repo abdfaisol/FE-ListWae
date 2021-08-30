@@ -25,6 +25,13 @@ $(document).ready(function () {
         prevTab(active);
 
     });
+    $('.tambah2').click(function(e) {
+
+        $('#nb2').val("");
+        $('#kt2').val("");
+        $('#hb2').val("");
+        $('#ctt2').val("");
+    });
 });
 
 function nextTab(elem) {
