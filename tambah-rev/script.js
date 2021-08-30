@@ -61,21 +61,22 @@ $(".next-step").click(function () {
     $('#jko2').html(value1);
     var rp = "Rp" + value2;
     $('#rp').html(rp);
-
     var list = '<div class="input-group mb-3 cb">' + '<div class="input-group-prepend" >' + '<div class="checkbox-round">' + '<input type="checkbox" id="checkbox" />' 
     + '<label for="checkbox">' + "</label>" + "</div>" + "<ul>" + '<li class="subjudul">' + value3 + "</li>" + '<li class="d-flex align-items-center isi">' + value4
     + '<i class="fa fa-circle" aria-hidden="true">' + "</i>" + rpp + value5 + "</li>" + '<li class="isi2">' + value6 + "</li>" + "</ul>" + "</div>"  + "</div>";
     $('#list').html(list);                       
 });
 
+var counter = 0;
 $(".tambah2").click(function () {
     var value3 = $("#nb2").val();
     var value4 = $("#kt2").val();
     var value5 = $("#hb2").val();
     var value6 = $("#ctt2").val();
     var rpp = "Rp";
-    var list = '<div class="input-group mb-3 cb">' + '<div class="input-group-prepend" >' + '<div class="checkbox-round">' + '<input type="checkbox" id="checkbox" />' 
-    + '<label for="checkbox">' + "</label>" + "</div>" + "<ul>" + '<li class="subjudul">' + value3 + "</li>" + '<li class="d-flex align-items-center isi">' + value4
+    counter++;
+    var list = '<div class="input-group mb-3 cb">' + '<div class="input-group-prepend" >' + '<div class="checkbox-round">' + '<input type="checkbox" id="checkbox' + counter + '"/>' 
+    + '<label for="checkbox' + counter + '">'  + "</label>" + "</div>" + "<ul>" + '<li class="subjudul">' + value3 + "</li>" + '<li class="d-flex align-items-center isi">' + value4
     + '<i class="fa fa-circle" aria-hidden="true">' + "</i>" + rpp + value5 + "</li>" + '<li class="isi2">' + value6 + "</li>" + "</ul>" + "</div>"  + "</div>";
-    $('#list').append(list); 
+    $('#list').append(list);  
 });
