@@ -26,7 +26,7 @@ body{
 #list-wae-container .amount{
   font-weight: bold;
 }
-.btn{
+#list-wae-container .btn{
   padding-left: 25px;
   padding-right: 25px;
   font-size: 12px;
@@ -103,8 +103,19 @@ body{
   color: #616467;
 }
 .bg-unggu{
-  background-color: #5C62EC;
-  color: white;
+  background-color: #5C62EC !important;
+  color: white !important;
+}
+.btn-unggu:hover{
+  background-color: #5C62EC !important;
+  color: white !important;
+}
+.btn-unggu:focus{
+  border: none;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  border-radius: 5px;
+  background-color: #5C62EC !important;
 }
 .wallet-form .input-group{
   position: relative;
