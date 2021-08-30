@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon"  href="img/logo.png"/>
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Listwae</title>
+    <link rel="icon" href="img/logo.png">
+    <title>ListWae</title>
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
@@ -18,6 +18,7 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link href="css/style-listwae.css" rel="stylesheet">
+    <link rel="stylesheet" href="tambah/style.css">
     <!-- <link href="css/icheckbox/icheck-bootstrap.css" rel="stylesheet"> -->
 </head>
 <body id="page-top">
@@ -29,7 +30,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <img src="img/logo.png">
+                    <img src="img/logo.png" alt="">
                 </div>
                 <div class="sidebar-brand-text mx-3">ListWae</div>
             </a>
@@ -244,8 +245,8 @@
                       <!-- Page Heading -->
                       <div class="d-sm-flex align-items-center justify-content-between mb-4" >
                           <h1 class="h3 mb-0 text-gray-800 font-weight-bold mb-4" id="h1-7rem">Dashboard</h1>
-                          <a href="#" class="d-sm-inline-block btn btn-sm btn-primary shadow-sm bg-unggu"><i
-                                  class="fas fa-plus fa-sm text-white-50"></i> Tambah Daftar</a>
+                          <button type="button" class="d-sm-inline-block btn btn-sm btn-primary shadow-sm bg-unggu" data-toggle="modal" data-target="#exampleModalCenter"><i
+                                  class="fas fa-plus fa-sm text-white-50"></i> Tambah Daftar</button>
                       </div>
                       <!-- Content Row -->
                       <div class="row">
@@ -278,7 +279,7 @@
                                         <p class="item d-flex align-items-center"> <span class="n-item">8</span> item <i class="fa fa-circle"></i> Rp<span>250.000</span></p>
                                         <div class="d-flex flex-row align-items-center align-self-center progress-list">
                                           <div class="progress flex-grow-1">
-                                              <div class="progress-bar bg-unggu" role="progressbar" style="width: 20%"
+                                              <div class="progress-bar <bg-unggu></bg-unggu>" role="progressbar" style="width: 20%"
                                                   aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                           </div>
                                           <p>
@@ -375,8 +376,196 @@
             </div>
         </div>
     </div>
+    <!-- partial:index.partial.html -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-body">
+        <div class="signup-step-container">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-12">
+                        <div class="wizard">
+                            <div class="wizard-inner">
+                                <div class="connecting-line"></div>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab"><span class="round-tab">1</span> <i>Judul Kebutuhan</i></a>
+                                    </li>
+                                    <li role="presentation" class="disabled">
+                                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab"><span class="round-tab">2</span> <i>Detail Item</i></a>
+                                    </li>
+                                    <li role="presentation" class="disabled">
+                                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab"><span class="round-tab">3</span> <i>Selesai</i></a>
+                                    </li>
+                                </ul>
+                            </div>
 
+                            <form role="form" action="index.html" class="login-box">
+                                <div class="tab-content" id="main_form">
+                                    <div class="tab-pane active" role="tabpanel" id="step1">
+                                        <p class="text-left">Buat Judul Kebutuhan</p>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label>Judul Kebutuhan</label>
+                                                    <input class="form-control" id="jki" type="text" name="name" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label>Tanggal</label>
+                                                    <input class="form-control" type="date" name="name" placeholder="">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <ul class="list-inline pull-right">
+                                            <li><button type="button" class="default-btn next-step">+ Buat</button></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="step2">
+                                        <p class="text-left">Judul Kebutuhan</p>
+                                        <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input class="form-control out" id="jko" type="text" name="name" placeholder="">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="col-md-12">
+                                            <p class="text-left mt-2">Detail Item</p>
+                                            <div class="form-group">
+                                                <label>Estimasi Pengeluaran</label>
+                                                <input class="form-control" id="ep" type="text" name="name" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Nama Barang</label>
+                                                <input class="form-control" id="nb" type="text" name="name" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Kuantitas</label>
+                                                <input class="form-control" id="kt" type="text" name="name" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Harga Barang</label>
+                                                <input class="form-control" id="hb" type="text" name="name" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Catatan</label>
+                                                <textarea class="form-control" id="ctt" name="name" rows="4" cols="50"></textarea>
+                                            </div>
+                                        </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-4"><button type="button" class="default-btn prev-step">Kembali</button></div>
+                                            <div class="col-md-4 ml-auto d-flex justify-content-end"><button type="button" class="default-btn next-step">Lanjutkan</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="step3">
+                                        <p class="text-left">Judul Kebutuhan</p>
+                                        <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input class="form-control out" id="jko2" type="text" name="name" placeholder="">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="col-md-12">
+                                            <div class="row mb-4">
+                                                <div class="col-md-4"><p class="text-left mt-3">Item</p></div>
+                                                <div class="col-md-6 ml-auto d-flex justify-content-end">
+                                                    <a href="#listone" data-toggle="collapse" aria-expanded="false" aria-controls="listone">
+                                                        <button type="button" class="default-btn tambah" data-text-swap="Tambah" data-text-original="Tutup">Tambah</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="collapse" id="listone">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label>Nama Barang</label>
+                                                            <input class="form-control" id="nb2" type="text" name="name" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label>Kuantitas</label>
+                                                            <input class="form-control" id="kt2" type="text" name="name" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label>Harga Barang</label>
+                                                            <input class="form-control" id="hb2" type="text" name="name" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label>Catatan</label>
+                                                            <textarea class="form-control" id="ctt2" name="name" rows="4" cols="50"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul class="list-inline pull-right">
+                                                    <li><button type="button" class="default-btn tambah2">+ Tambah</button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="dropdown drop-d">
+                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-right"
+                                                        aria-labelledby="dropdownMenuLink">
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                    </div>
+                                                </div>
+                                                <div class="box-control" id="list">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8"><label class="text-left">Total Estimasi Pengeluaran</label></div>
+                                            <div class="col-md-4 ml-auto d-flex justify-content-end" id="rp"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4"><button type="button" class="default-btn prev-step">Kembali</button></div>
+                                            <div class="col-md-4 ml-auto d-flex justify-content-end"><button type="button" class="default-btn next-step">Simpan</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <!-- partial -->
     <!-- Bootstrap core JavaScript-->
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script  src="tambah/script.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
