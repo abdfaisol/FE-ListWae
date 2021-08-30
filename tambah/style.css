@@ -3,27 +3,6 @@
 body{
 	font-family: 'Poppins', sans-serif;
 }
-* {
-	margin: 0;
-	padding: 0;
-}
-i {
-	margin-right: 10px;
-}
-hr {
-    width:100%;
-    margin:0.5rem 1rem 1rem 1rem;
-    border: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-label{
-    font-family:'Poppins';
-    font-size: 14px;
-}
-p{
-    font-family:'Poppins';
-    font-size: 12px;
-}
 .grid-container {
     display: grid;
     width: 100%;
