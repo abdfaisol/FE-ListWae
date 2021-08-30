@@ -51,7 +51,7 @@ $(".next-step").click(function () {
     var value0 = $("#jki").val();
     $('#jko').html(value0);
 
-    var value1 = $("#jko").val();
+    var value1 = $("#jko").html();
     var value2 = $("#ep").val();
     var value3 = $("#nb").val();
     var value4 = $("#kt").val();
